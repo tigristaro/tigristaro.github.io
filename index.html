@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <title>TipsNote : GitHub Pages Sample</title>
   <script>
+    var count=1;
     function clickBtn1(){
+      count++;
+      for (i=1; i=<count; i++){
       const child = document.getElementById("child");
       child.textContent = "ティグリス太郎";
+      }
     }
+
+
   </script>
 </head>
 <body>
   <main>
-    <span id="count"></span>
     <p id="multiple"> 深淵の扉 </p>
     <input type="button" value="増殖" onclick="clickBtn1()">
     <h1 id="child">homoSapience</h1>
