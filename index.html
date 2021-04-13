@@ -6,11 +6,11 @@
   <script>
     var count=2;
     function clickBtn1(){
-      //count++;
-
-      const child = document.getElementById("child");
       for (i=1; i=<count; i++){
-      child.textContent = "ティグリス太郎";
+        let table = document.getElementById('targetTable');
+        let newRow = table.insertRow();
+        let newChild = document.createTextNode('ティグリス太郎');
+        newCell.appendChild(newChild);
       }
     }
 
@@ -21,7 +21,7 @@
   <main>
     <p id="multiple"> 深淵の扉 </p>
     <input type="button" value="増殖" onclick="clickBtn1()">
-    <h1 id="child">homoSapience</h1>
+    <table id="targetTable">homoSapience</table>
   </main>
 </body>
 </html>
